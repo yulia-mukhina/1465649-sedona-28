@@ -32,19 +32,19 @@
       <ul>
         <li><span>Настоящий городок №1
             Седона - не аттракцион для туристов, там течет своя жизнь
-            <img src="sedona.jpg" width="800" height="256" alt="Картинка пейзажа">
+            <img src="img/maincity.jpg" width="800" height="256" alt="Картинка пейзажа">
           </span>
-          <span><img src="home.jpg" alt="иконка жилья" width="75" height="72">
+          <span><img src="img/home.svg" alt="иконка жилья" width="75" height="72">
             Жилье
-            Рекомендуем пожить как в настоящем мотеле, всё как в кино!
+            Рекомендуем пожить как в настоящем мотеле, всё как в кино!</span>
 
-            <img src="food.jpg" alt="иконка еды" width="75" height="70">Еда
+          <span><img src="img/food.svg" alt="иконка еды" width="75" height="70">Еда
             Всегда заказывайте фирменный бургер,
-            вы не разочаруетесь!
+            вы не разочаруетесь!</span>
 
-            <img src="souvenirs.jpg" alt="картинка сувениров" width="64" height="77">Сувениры
+          <span> <img src="img/souvenirs.svg" alt="картинка сувениров" width="64" height="77">Сувениры
             Не только китайского, но и местног производства! </span></li>
-        <li><img src="bridge.jpg" alt="картинка моста"><span>
+        <li><img src="img/bridge.jpg" alt="картинка моста" width="800" height="256"><span>
             -№2 -
             Там есть мост дьявола
             Да, по нему можно пройти! Если конечно вы осмелитесь</span>
@@ -68,26 +68,43 @@
       <h2>Запись</h2>
       <p><button type="button">Поиск гостиницы в Седоне</button></p>
       <!---Форма записи-->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="booking-starts">Дата заезда</label>
+          <input id="booking-starts" name="booking-starts" type="date">
+        </p>
+        <p>
+          <label for="booking-ends">Время</label>
+          <input id="booking-ends" name="booking-ends" type="date">
+        </p>
+        <!---Форма с прибавлением по плюс-минус-->
+
+        <p>Взрослые: <input name="adults" type="number" step="1"> Дети:<input name="children" type="number" step="1">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
+
       <img src="img/map.jpg" width="1199" height="594" alt="Карта">
     </section>
   </main>
 
-<footer>
-  <section>
-    <h2>Телефон</h2>
-    <p>#VISITSEDONA
-      ТЕЛ: +7 (495)666-01-01</p>
-  </section>
-  <section>
-    <h2>Контакты</h2>
-    <ul>
-      <li><a href="">twitter</a></li>
-      <li><a href="">facebook</a></li>
-      <li><a href="">youtube</a></li>
-    </ul>
-  </section>
-  <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" height="41"
-        width="115" alt="html academy logo"></a></p>
-</footer>
+  <footer>
+    <section>
+      <h2>Телефон</h2>
+      <p>#VISITSEDONA
+        ТЕЛ: +7 (495)666-01-01</p>
+    </section>
+    <section>
+      <h2>Контакты</h2>
+      <ul>
+        <li><a href="">twitter</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">youtube</a></li>
+      </ul>
+    </section>
+    <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" height="41"
+          width="115" alt="html academy logo"></a></p>
+  </footer>
 </body>
+
 </html>

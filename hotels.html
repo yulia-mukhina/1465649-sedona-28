@@ -20,29 +20,30 @@
     </nav>
   </header>
   <main>
-    <h1>Поиск отелей</h1>
-    <section>
-      <h2>Критерии</h2>
-      <img src="bgimage.jpg" width="1200" height="217" alt="картинка на фоне фильтра">
-      <span>Инфраструктура:</span>
-      <ul>
-        <li>Бассейн</li>
-        <li>Парковка </li>
-        <li>Wifi</li>
-      </ul>
-
-      <span>Тип жилья</span>
-      <ul>
-        <li>Гостиница</li>
-        <li>Мотель </li>
-        <li>Апартаменты</li>
-      </ul>
-      <span>
-        Стоимость в сутки:
-        <!---Ранжирование-->
-        от 0 до 3000</span>
-      <input type=button value="Показать">
-    </section>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура</legend>
+        <label><input type="checkbox" name="infrastructure" checked value="pool">Бассейн</label>
+        <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
+        <label><input type="checkbox" name="infrastructure" value="WiFi">Wi-Fi</label>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья</legend>
+        <label><input type="checkbox" name="housetype" checked value="hotel">Гостиница</label>
+        <label><input type="checkbox" name="equipment" checked value="motel">Мотель</label>
+        <label><input type="checkbox" name="equipment" checked value="apartament">Апартаменты</label>
+      </fieldset>
+    </form>
+    <fieldset>
+      <legend>Стоимость в сутки (Р):</legend>
+      <form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricenumber.value">
+        <label for="minprice"> от <output id="minprice" name="priceoutput"></output></label>
+        <label>
+          <!--место для числа со второго полузнка--></label>
+        <label for="pricenumber"><input id="pricenumber" name="pricenumber" type="range" min="0" max="7000" step="100">
+        </label></form>
+    </fieldset>
+    <button type="submit">Показать</button>
     <section>
       <h2>Результаты поиска</h2><span>Найдено: 3
         Сортировка: </span>
