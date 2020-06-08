@@ -30,38 +30,50 @@
       <fieldset>
         <legend>Тип жилья</legend>
         <label><input type="checkbox" name="housetype" checked value="hotel">Гостиница</label>
-        <label><input type="checkbox" name="equipment" checked value="motel">Мотель</label>
-        <label><input type="checkbox" name="equipment" checked value="apartament">Апартаменты</label>
+        <label><input type="checkbox" name="housetype" checked value="motel">Мотель</label>
+        <label><input type="checkbox" name="housetype" checked value="apartament">Апартаменты</label>
+      </fieldset>
+      <fieldset class="filter-item">
+        <legend>Стоимость в сутки (Р):</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="20000">
+              </label>
+            </div>
+            <div class="scale">
+              <div class="bar" style="width: 30%; margin-left: 20%"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+          </div>
+        </div>
+        <button type="submit">Показать</button>
       </fieldset>
     </form>
-    <fieldset>
-      <legend>Стоимость в сутки (Р):</legend>
-      <form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricenumber.value">
-        <label for="minprice"> от <output id="minprice" name="priceoutput"></output></label>
-        <label>
-          <!--место для числа со второго полузнка--></label>
-        <label for="pricenumber"><input id="pricenumber" name="pricenumber" type="range" min="0" max="7000" step="100">
-        </label></form>
-    </fieldset>
-    <button type="submit">Показать</button>
+
+
     <section>
-      <h2>Результаты поиска</h2><span>Найдено: 3
-        Сортировка: </span>
+      <h2>Результаты поиска</h2><span>Найдено:</span><span>3</span>
+      <span>Сортировка: </span>
       <ul>
-        <li> по цене</li>
-        <li> по типу</li>
-        <li> по рейтингу</li>
+        <li><a href="ссылка">по цене</a> </li>
+        <li><a href="ссылка">по типу</a> </li>
+        <li> <a href="ссылка">по рейтингу</a> </li>
       </ul>
-      <img src="uparrow.jpg" alt="вверх" width="11" height="10"><img src="downarrow.jpg" alt="вниз" width="11"
-        height="10">
+      <a href="uparrow"> Вверх</a><a href="downarrow">Вниз</a>
     </section>
     <section>
       <h2>Список отелей</h2>
       <ul>
         <li><img src="img/amara.jpg" width="135" height="90" alt="Фотография отеля Amara Resort & Spa">
           <h3> Amara Resort & Spa</h3>
-          <p>Гостиница от 4000 р.
-            <a href="">Подробнее</a><a href="">Забронировать</a></p>
+          <p>Гостиница от 4000 р.</p>
+          <a href="">Подробнее</a><a href="">Забронировать</a>
           <img src="img/star.svg" width="19" height="17" alt="1 звезда">
           <img src="img/star.svg" width="19" height="17" alt="2 звезда">
           <img src="img/star.svg" width="19" height="17" alt="3 звезда">
@@ -70,8 +82,8 @@
         </li>
         <li><img src="img/desert.jpg" width="135" height="90" alt="Фотография отеля Desert Quail Inn">
           <h3> Desert Quail Inn</h3>
-          <p>Мотель от 3000 р.
-            <a href="">Подробнее</a><a href="">Забронировать</a></p>
+          <p>Мотель от 3000 р.</p>
+          <a href="">Подробнее</a><a href="">Забронировать</a>
           <img src="img/star.svg" width="19" height="17" alt="1 звезда">
           <img src="img/star.svg" width="19" height="17" alt="2 звезда">
           <img src="img/star.svg" width="19" height="17" alt="3 звезда">
@@ -79,8 +91,8 @@
         </li>
         <li><img src="img/villasatpoco.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           <h3>Villas at Poco Diablo</h3>
-          <p>Апартаменты от 2000 р.
-            <a href="">Подробнее</a><a href="">Забронировать</a></p>
+          <p>Апартаменты от 2000 р.</p>
+          <a href="">Подробнее</a><a href="">Забронировать</a>
           <img src="img/star.svg" width="19" height="17" alt="1 звезда">
           <img src="img/star.svg" width="19" height="17" alt="2 звезда">
           <span>Рейтинг: 9,2</span>
@@ -91,8 +103,8 @@
   <footer>
     <section>
       <h2>Телефон</h2>
-      <p>#VISITSEDONA
-        ТЕЛ: +7 (495)666-01-01</p>
+      <p>#VISITSEDONA</p>
+      <p>ТЕЛ: <a href="tel:+74956660101">+7 (495) 666-01-01</a></p>
     </section>
     <section>
       <h2>Контакты</h2>

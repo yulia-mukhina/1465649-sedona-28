@@ -22,46 +22,60 @@
   <main>
     <section>
       <h1>Седона</h1>
-      <img src="img/intro-welcome.svg" width="456" height="350" alt="Надпись на фоне гор с приветствием">
-      <div class id="background-image-sedona"></div>
-      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="background-image-sedona"><img src="img/intro-welcome.svg" width="456" height="350"
+          alt="Добро пожаловать в Седону!">
+        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      </div>
     </section>
     <section>
-      <h2>Причины</h2>
+      <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
       <ul>
-        <li><span>Настоящий городок №1
-            Седона - не аттракцион для туристов, там течет своя жизнь
-            <img src="img/maincity.jpg" width="800" height="256" alt="Картинка пейзажа">
-          </span>
-          <span><img src="img/home.svg" alt="иконка жилья" width="75" height="72">
-            Жилье
-            Рекомендуем пожить как в настоящем мотеле, всё как в кино!</span>
-
-          <span><img src="img/food.svg" alt="иконка еды" width="75" height="70">Еда
-            Всегда заказывайте фирменный бургер,
-            вы не разочаруетесь!</span>
-
-          <span> <img src="img/souvenirs.svg" alt="картинка сувениров" width="64" height="77">Сувениры
-            Не только китайского, но и местног производства! </span></li>
-        <li><img src="img/bridge.jpg" alt="картинка моста" width="800" height="256"><span>
-            -№2 -
-            Там есть мост дьявола
-            Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+        <li>
+          <div>Настоящий городок</div>
+          <div>№1</div>
+          <div>Седона - не аттракцион для туристов, там течет своя жизнь</div>
+          <img src="img/maincity.jpg" width="800" height="256" alt="Картинка пейзажа">
+          <div>
+            <p>Жилье</p>
+            <p>Рекомендуем пожить как в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div>
+            <p>Еда</p>
+            <p>Всегда заказывайте фирменный бургер,
+              вы не разочаруетесь!</p>
+          </div>
+          <div>
+            <p>Сувениры</p>
+            <p> Не только китайского, но и местног производства!</p>
+          </div>
+        </li>
+        <li><img src="img/bridge.jpg" alt="картинка моста" width="800" height="256">
+          <div>-№2 -</div>
+          <div>Там есть мост дьявола</div>
+          <div> Да, по нему можно пройти! Если конечно вы осмелитесь</div>
         </li>
 
-        <li><span>- №3 - Небольшая площадь
-            Все достопримечательности находятся очень близко</span></li>
+        <li>
+          <div>- №3 -</div>
+          <div>Небольшая площадь</div>
+          <div>Все достопримечательности находятся очень близко</div>
+        </li>
 
-        <li><span>- №4 - Красивая дорога
-            Ехать в Седону из Лас-Вегаса совсем не скучно!</span></li>
-        <li><span>- №5- Мало туристов
-            Большинство едет в Гранд Каньон и толпится там</span></li>
+        <li>
+          <div>- №4 -</div>
+          <div>Красивая дорога</div>
+          <div>Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+        </li>
+        <li>
+          <div>- №5-</div>
+          <div>Мало туристов</div>
+          <div>Большинство едет в Гранд Каньон и толпится там</div>
+        </li>
       </ul>
     </section>
     <section>
-      <p>Заинтересовались?
-        Укажите предполагаемые даты поездки,
+      <p>Заинтересовались?</p>
+      <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
     <section>
@@ -71,15 +85,18 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="booking-starts">Дата заезда</label>
-          <input id="booking-starts" name="booking-starts" type="date">
+          <input id="booking-starts" name="booking-starts" type="text" placeholder="24 апреля 2017"><button
+            type="button"> <img src="img/calendar.svg" alt="Календарь"></button>
         </p>
         <p>
           <label for="booking-ends">Время</label>
-          <input id="booking-ends" name="booking-ends" type="date">
+          <input id="booking-ends" name="booking-ends" type="text" placeholder="4 июля 2017"><button type="button"><img
+              src="img/calendar.svg" alt="Календарь"></button>
         </p>
         <!---Форма с прибавлением по плюс-минус-->
-
-        <p>Взрослые: <input name="adults" type="number" step="1"> Дети:<input name="children" type="number" step="1">
+        <p>Взрослые: <button type="button">-</button><input name="adults" type="number" step="1"><button
+            type="button">+</button> Дети:<button type="button">-</button><input name="children" type="number"
+            step="1"><button type="button">+</button>
         </p>
         <button type="submit">Найти</button>
       </form>
@@ -91,8 +108,8 @@
   <footer>
     <section>
       <h2>Телефон</h2>
-      <p>#VISITSEDONA
-        ТЕЛ: +7 (495)666-01-01</p>
+      <p>#VISITSEDONA</p>
+      <p>ТЕЛ: <a href="tel:+74956660101">+7 (495) 666-01-01</a></p>
     </section>
     <section>
       <h2>Контакты</h2>
